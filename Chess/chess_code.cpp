@@ -86,6 +86,7 @@ void DrawTipText()
 
 
 int main() {
+    // 初始化图形界面
     initgraph(600, 600);
     bool running = true;
 

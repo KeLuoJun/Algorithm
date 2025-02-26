@@ -1,0 +1,1 @@
+{"name":"Local: 知识竞赛","url":"d:\\Code\\python\\Algorithm_py\\贪心\\知识竞赛.py","tests":[{"id":1732894912425,"input":"3\n2 2\n3 1\n1 3","output":"2.0"},{"id":1732895664579,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\python\\Algorithm_py\\贪心\\知识竞赛.py","group":"local","local":true}

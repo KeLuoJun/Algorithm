@@ -1,0 +1,1 @@
+{"name":"Local: 过河问题","url":"d:\\Code\\python\\Algorithm_py\\贪心\\过河问题.py","tests":[{"id":1732966619794,"input":"4\n6\n7\n10\n15","output":"42"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\python\\Algorithm_py\\贪心\\过河问题.py","group":"local","local":true}

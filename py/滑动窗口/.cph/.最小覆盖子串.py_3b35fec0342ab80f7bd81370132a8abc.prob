@@ -1,0 +1,1 @@
+{"name":"Local: 最小覆盖子串","url":"d:\\Code\\Algorithm\\py\\滑动窗口\\最小覆盖子串.py","tests":[{"id":1742397555094,"input":"ADOBECODEBANC\nABC","output":"BANC"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\滑动窗口\\最小覆盖子串.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 解码方法II","url":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\解码方法II.py","tests":[{"id":1742616787731,"input":"*","output":"9"},{"id":1742616794694,"input":"2*","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\解码方法II.py","group":"local","local":true}

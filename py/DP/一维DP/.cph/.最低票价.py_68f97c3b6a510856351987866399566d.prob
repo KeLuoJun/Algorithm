@@ -1,0 +1,1 @@
+{"name":"Local: 最低票价","url":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\最低票价.py","tests":[{"id":1742619874618,"input":"1 4 6 7 8 20\n2 7 15","output":"11"},{"id":1742619887086,"input":"1 2 3 4 5 6 7 8 9 10 30 31\n2 7 15","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\最低票价.py","group":"local","local":true}

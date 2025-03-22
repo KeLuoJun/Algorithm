@@ -1,0 +1,1 @@
+{"name":"Local: 不同的子序列 II","url":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\不同的子序列 II.py","tests":[{"id":1742629134147,"input":"abc","output":"7"},{"id":1742629138062,"input":"aba","output":"6"},{"id":1742629142942,"input":"aaa","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\不同的子序列 II.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 最长有效括号","url":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\最长有效括号.py","tests":[{"id":1742623519290,"input":"(()","output":"2"},{"id":1742623523162,"input":")()())","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\一维DP\\最长有效括号.py","group":"local","local":true}

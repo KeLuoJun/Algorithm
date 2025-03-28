@@ -14,12 +14,6 @@
 # 测试链接 : https://www.nowcoder.com/practice/f9c6f980eeec43ef85be20755ddbeaf4
 
 
-
-
-
-
-
-
 def solution_1():
     dp = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
     # p : 上次展开的主商品编号  很关键！！！！！！！ 

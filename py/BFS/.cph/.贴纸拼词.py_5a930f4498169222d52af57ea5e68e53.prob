@@ -1,0 +1,1 @@
+{"name":"Local: 贴纸拼词","url":"d:\\Code\\Algorithm\\py\\BFS\\贴纸拼词.py","tests":[{"id":1743509899170,"input":"3\nwith\nexample\nscience\nthehat","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\BFS\\贴纸拼词.py","group":"local","local":true}

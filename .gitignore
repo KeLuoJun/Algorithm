@@ -205,3 +205,5 @@ cython_debug/
 *.exe
 *.out
 *.app
+
+*.ipynb

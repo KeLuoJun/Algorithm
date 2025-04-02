@@ -1,0 +1,1 @@
+{"name":"Local: 盛最多水的容器","url":"d:\\Code\\Algorithm\\py\\双指针\\盛最多水的容器.py","tests":[{"id":1743607757382,"input":"9\n1 8 6 2 5 4 8 3 7","output":"49"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\双指针\\盛最多水的容器.py","group":"local","local":true}

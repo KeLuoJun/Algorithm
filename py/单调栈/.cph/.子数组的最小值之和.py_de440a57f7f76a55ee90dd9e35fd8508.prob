@@ -1,0 +1,1 @@
+{"name":"Local: 子数组的最小值之和","url":"d:\\Code\\Algorithm\\py\\单调栈\\子数组的最小值之和.py","tests":[{"id":1743690627617,"input":"4\n3 1 2 4","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\单调栈\\子数组的最小值之和.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 最大宽度坡","url":"d:\\Code\\Algorithm\\py\\单调栈\\最大宽度坡.py","tests":[{"id":1743748781089,"input":"6\n6 0 8 2 1 5","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\单调栈\\最大宽度坡.py","group":"local","local":true}

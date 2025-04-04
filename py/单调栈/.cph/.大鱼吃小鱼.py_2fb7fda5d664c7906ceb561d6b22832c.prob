@@ -1,0 +1,1 @@
+{"name":"Local: 大鱼吃小鱼","url":"d:\\Code\\Algorithm\\py\\单调栈\\大鱼吃小鱼.py","tests":[{"id":1743751408954,"input":"6\n4 3 2 3 2 1","output":"2"},{"id":1743751430815,"input":"3\n1 2 3","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\单调栈\\大鱼吃小鱼.py","group":"local","local":true}

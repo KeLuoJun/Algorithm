@@ -1,0 +1,1 @@
+{"name":"Local: 接取落水的最小花盆","url":"d:\\Code\\Algorithm\\py\\单调队列\\接取落水的最小花盆.py","tests":[{"id":1743946006014,"input":"4 5\n6 3\n2 4\n4 10\n12 15","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\单调队列\\接取落水的最小花盆.py","group":"local","local":true}

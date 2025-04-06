@@ -8,35 +8,37 @@
 
 import sys
 
-def ok():
-    global maxh, maxt, minh, mint, maxdq, mindq
-    max_num = arr[maxdq[maxh]][1] if maxh < maxt else 0
-    min_num = arr[mindq[minh]][1] if minh < mint else 0
-    return max_num - min_num >= d
-
-def push(i):
-    global maxh, maxt, minh, mint, maxdq, mindq
-    while maxh < maxt and arr[maxdq[maxt - 1]][1] <= arr[i][1]:
-        maxt -= 1
-    maxdq[maxt] = i
-    maxt += 1
-    while minh < mint and arr[mindq[mint - 1]][1] >= arr[i][1]:
-        mint -= 1
-    mindq[mint] = i
-    mint += 1
-
-def pop(i):
-    global maxh, maxt, minh, mint, maxdq, mindq
-    if maxh < maxt and maxdq[maxh] == i:
-        maxh += 1
-    if minh < mint and mindq[minh] == i:
-        mint += 1
-
-
-def solve():
+def solve(arr, d):
     # arr[0...n-1][2]: x(0), 高度(1)
 	# 所有水滴根据x排序，谁小谁在前
-    global maxh, maxt, minh, mint, maxdq, mindq
+    n = len(arr)
+    maxh, maxt, minh, mint = 0, 0, 0, 0
+    maxdq, mindq = [0] * n, [0] * n
+
+    def ok():
+        nonlocal maxh, maxt, minh, mint
+        max_num = arr[maxdq[maxh]][1] if maxh < maxt else 0
+        min_num = arr[mindq[minh]][1] if minh < mint else 0
+        return max_num - min_num >= d
+
+    def push(i):
+        nonlocal maxh, maxt, minh, mint
+        while maxh < maxt and arr[maxdq[maxt - 1]][1] <= arr[i][1]:
+            maxt -= 1
+        maxdq[maxt] = i
+        maxt += 1
+        while minh < mint and arr[mindq[mint - 1]][1] >= arr[i][1]:
+            mint -= 1
+        mindq[mint] = i
+        mint += 1
+
+    def pop(i):
+        nonlocal maxh, maxt, minh, mint
+        if maxh < maxt and maxdq[maxh] == i:
+            maxh += 1
+        if minh < mint and mindq[minh] == i:
+            minh += 1
+
     arr.sort(key=lambda x: (x[0], x[1]))
     
     ans = float('inf')
@@ -53,12 +55,10 @@ def solve():
         pop(l)
     return ans
 
+def main():
+    n, d = map(int, sys.stdin.readline().strip().split())
+    arr = [list(map(int, sys.stdin.readline().strip().split())) for _ in range(n)]
+    print(solve(arr, d))
 
 if __name__ == '__main__':
-    N = int(1e5 + 1)
-    n , d = map(int, input().split())
-    arr = [list(map(int, input().split())) for _ in range(n)]
-    maxh, maxt, minh, mint = 0, 0, 0, 0
-    maxdq, mindq = [0] * N, [0] * N
-    print(solve())
-    
+    main()

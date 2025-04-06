@@ -1,0 +1,1 @@
+{"name":"Local: 滑动窗口最大值","url":"d:\\Code\\Algorithm\\py\\单调队列\\滑动窗口最大值.py","tests":[{"id":1743868758259,"input":"8 3\n1 3 -1 -3 5 3 6 7","output":"[3, 3, 5, 3, 6, 7]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\单调队列\\滑动窗口最大值.py","group":"local","local":true}

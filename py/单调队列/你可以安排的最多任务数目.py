@@ -11,68 +11,73 @@
 # 请你返回 最多 有多少个任务可以被完成。
 # 测试链接 : https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/
 
-# 二分 + 贪心 + 队列
+# 二分 + 贪心 + 双端队列（单调队列）
 
-class Solution:
-    def maxTaskAssign(self, tasks: list[int], workers: list[int], pills: int, strength: int) -> int:
-        self.max_num = int(1e5)  # 双端队列，长度为原来的两倍
-        self.n, self.m = len(tasks), len(workers)
-        self.strength, self.pills = strength, pills
-        self.tasks = sorted(tasks)
-        self.workers = sorted(workers)
-        ans = 0
-        l, r = 0, min(self.n, self.m)
-        while l <= r:
-            mid = (l + r) // 2
-            if self.ok(0, mid - 1, self.m - mid, self.m - 1):
-                # mid中点，一定要完成的任务数量
-		        # 任务拿最小的m个，工人找最大的m个（贪心） 
-                ans = mid
-                l = mid + 1
-            else:
-                r = mid - 1
-        return ans
+import sys
+from collections import deque
+# 两个数组排序 : O(n * logn) + O(m * logm)
+# 二分答案的过程，每次二分都用一下双端队列 : O((n和m最小值)*log(n和m最小值))
+# 最复杂的反而是排序的过程了，所以时间复杂度O(n * logn) + O(m * logm)
 
-    def ok(self, tl, tr, wl, wr):
-        h, t = 0, 0
-        cnt = 0  #已经使用的药丸数量
-        dq = [0] * (self.max_num)
-        j = tl
-        for i in range(wl, wr + 1):
-            # i : 工人的编号
-		    # j : 任务的编号
-            for j in range(j, tr + 1):
+def maxTaskAssign(tasks: list[int], workers: list[int], pills: int, strength: int) -> int:
+    n, m = len(tasks), len(workers)
+    tasks.sort(), workers.sort()
+
+    def ok(mid):
+        '''
+        tasks[0....mid-1]需要力量最小的几个任务
+        workers[mid....m-1]力量值最大的几个工人
+        药效是s，一共有的药pills个
+        在药的数量不超情况下，能不能每个工人都做一个任务
+        '''
+        nonlocal tasks, workers, pills, strength
+        cnt = 0  # 已经使用的药的数量
+        dq = deque()
+        # i : 工人的编号
+		# j : 任务的编号
+        j = 0
+        for i in range(m - mid, m):
+            while j < mid and workers[i] >= tasks[j]:
                 # 工人不吃药的情况下，去解锁任务
-                if self.tasks[j] <= self.workers[i]:
-                    dq[t] = j
-                    t += 1
-                else:
-                    break
-            # 1-当前工人不吃药下能做任务(从队列头部拿任务做)
-            if h < t and self.tasks[dq[h]] <= self.workers[i]:
-                h += 1
-            # 吃药之后的逻辑
+                dq.append(j)
+                j += 1
+            if dq and workers[i] >= tasks[dq[0]]:
+                dq.popleft()
             else:
-                # 吃药之后，当前工人能再次解锁的任务
-                for j in range(j, tr + 1):
-                    if self.tasks[j] <= self.workers[i] + self.strength:
-                        dq[t] = j
-                        t += 1
-                    else:
-                        break
-                # 2-当前工人吃药下能做任务(从队列尾部拿任务做)(贪心)
-                # 因为是根据吃药后自己的能力解锁出来的，
-                # 所以如果有任务，则t位置的任务一定能做
-                if h < t:
-                    t -= 1
+                # 吃药之后的逻辑
+                while j < mid and workers[i] + strength >= tasks[j]:
+                    dq.append(j)
+                    j += 1
+                if dq:
                     cnt += 1
+                    dq.pop()
                 else:
-                    # 3-吃药之后还不能做解锁后的最大体力的工作
-                    # 则这个工人不可能会被安排任务
-                    # 因此不可能做到 wl 到 wr 的工人都安排任务 
                     return False
-        return cnt <= self.pills
-            
+        return cnt <= pills
+    
+    ans = 0
+    l, r = 0, min(n, m)
+    while l <= r:
+        # m中点，一定要完成的任务数量
+        mid = (l + r) // 2
+        if ok(mid):
+            ans = max(ans, mid)
+            l = mid + 1
+        else:
+            r = mid - 1
+
+    return ans
+
+
+def main() -> None:
+    n, m, pills, strength = map(int, sys.stdin.readline().strip().split())
+    tasks = list(map(int, sys.stdin.readline().strip().split()))
+    workers = list(map(int, sys.stdin.readline().strip().split()))
+    print(maxTaskAssign(tasks, workers, pills, strength))
+
+if __name__ == '__main__':
+    main()
+
         
 
 

@@ -42,13 +42,16 @@ def maxTaskAssign(tasks: list[int], workers: list[int], pills: int, strength: in
                 dq.append(j)
                 j += 1
             if dq and workers[i] >= tasks[dq[0]]:
+                # 不吃药的情况下，去头部拿任务
                 dq.popleft()
             else:
                 # 吃药之后的逻辑
+                # 吃药之后，去解锁任务
                 while j < mid and workers[i] + strength >= tasks[j]:
                     dq.append(j)
                     j += 1
                 if dq:
+                # 吃药的情况下，去尾部拿任务
                     cnt += 1
                     dq.pop()
                 else:

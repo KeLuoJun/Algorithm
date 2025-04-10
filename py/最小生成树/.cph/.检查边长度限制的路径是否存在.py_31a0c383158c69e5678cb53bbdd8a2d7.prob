@@ -1,0 +1,1 @@
+{"name":"Local: 检查边长度限制的路径是否存在","url":"d:\\Code\\Algorithm\\py\\最小生成树\\检查边长度限制的路径是否存在.py","tests":[{"id":1744276147368,"input":"3 4 2\n0 1 2\n1 2 4\n2 0 8\n1 0 16\n0 1 2 \n0 2 5","output":"[False, True]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\最小生成树\\检查边长度限制的路径是否存在.py","group":"local","local":true}

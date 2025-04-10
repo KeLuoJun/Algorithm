@@ -1,0 +1,1 @@
+{"name":"Local: 移除最多的同行或同列石头","url":"d:\\Code\\Algorithm\\py\\并查集\\移除最多的同行或同列石头.py","tests":[{"id":1744209675526,"input":"5\n0 0\n0 2\n1 1\n2 0\n2 2","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\并查集\\移除最多的同行或同列石头.py","group":"local","local":true}

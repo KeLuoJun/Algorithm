@@ -1,0 +1,1 @@
+{"name":"Local: 等差数列差分","url":"d:\\Code\\Algorithm\\py\\差分\\等差数列差分.py","tests":[{"id":1744336383999,"input":"5 2\n1 5 2 10\n2 4 1 1","output":"3 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\差分\\等差数列差分.py","group":"local","local":true}

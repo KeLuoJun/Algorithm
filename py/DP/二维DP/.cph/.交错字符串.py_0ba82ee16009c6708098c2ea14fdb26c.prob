@@ -1,0 +1,1 @@
+{"name":"Local: 交错字符串","url":"d:\\Code\\Algorithm\\py\\DP\\二维DP\\交错字符串.py","tests":[{"id":1744297734715,"input":"aabcc\ndbbca\naadbbbaccc","output":"false"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\二维DP\\交错字符串.py","group":"local","local":true}

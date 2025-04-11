@@ -1,0 +1,1 @@
+{"name":"Local: 不同的子序列","url":"d:\\Code\\Algorithm\\py\\DP\\二维DP\\不同的子序列.py","tests":[{"id":1744295065612,"input":"rabbbit\nrabbit","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\二维DP\\不同的子序列.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 最大人工岛","url":"d:\\Code\\Algorithm\\py\\洪水填充\\最大人工岛.py","tests":[{"id":1744359050327,"input":"2\n1 0\n0 1","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\洪水填充\\最大人工岛.py","group":"local","local":true}

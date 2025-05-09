@@ -9,26 +9,38 @@
 # 测试数据保证nums一定能变得与target相似
 # 测试链接 : https://leetcode.cn/problems/minimum-number-of-operations-to-make-arrays-similar/
 
-class Solution:
-    def makeSimilar(self, nums: list[int], target: list[int]) -> int:
-        self.n = len(nums)
-        self.nums, oddsize = self.split(nums)
-        self.target, _ = self.split(target)
-        self.nums[:oddsize] = sorted(self.nums[:oddsize])
-        self.nums[oddsize:] = sorted(self.nums[oddsize:])
-        self.target[:oddsize] = sorted(self.target[:oddsize])
-        self.target[oddsize:] = sorted(self.target[oddsize:])
-        ans = 0
-        for i in range(self.n):
-            ans += abs(self.nums[i] - self.target[i])
-        return int(ans // 4)
+from typing import List
+import sys
 
-    def split(self, arr):
+def makeSimilar(nums: List[int], target: List[int]):
+    n = len(nums)
+    def split(arr: List[int], n):
         oddsize = 0
-        for i in range(self.n):
+        for i in range(n):
             if arr[i] & 1:
                 arr[i], arr[oddsize] = arr[oddsize], arr[i]
                 oddsize += 1
-        return arr, oddsize
-        
+        return oddsize
+    oddsize = split(nums, n)
+    split(target, n)
+    nums[:oddsize] = sorted(nums[:oddsize])
+    nums[oddsize:] = sorted(nums[oddsize:])
+    target[:oddsize] = sorted(target[:oddsize])
+    target[oddsize:] = sorted(target[oddsize:])
+    ans = 0
+    for i in range(n):
+        ans += abs(nums[i] - target[i])
+    return ans // 4
+
+
+def main() -> None:
+    n = int(sys.stdin.readline().strip())
+    nums = list(map(int, sys.stdin.readline().strip().split()))
+    target = list(map(int, sys.stdin.readline().strip().split()))
+    print(makeSimilar(nums, target))
+
+
+if __name__ == '__main__':
+    main()
+
         

@@ -7,17 +7,29 @@
 # 所有兔子都不会说错，返回森林中兔子的最少数量
 # 测试链接 : https://leetcode.cn/problems/rabbits-in-forest/
 
-class Solution:
-    def numRabbits(self, answers: list[int]) -> int:
-        answers.sort()
-        n = len(answers)
-        i, j = 0, 1
-        ans = 0
-        while i < n:
-            x = answers[i]
-            while j < n and answers[j] == x:
-                j += 1
-            # i...j-1 都是同一种答案，当前组有j-i个回答
-            ans += int((j - i + x) // (x + 1)) * (x + 1)
-            i = j
-        return ans
+import sys
+from typing import List
+
+def numRabbits(arr: List[int]):
+    n = len(arr)
+    arr.sort()
+    ans = 0
+    i, j = 0, 1
+    while i < n:
+        x = arr[i]
+        while j < n and x == arr[j]:
+            j += 1
+        ans += (j - i + x) // (x + 1) * (x + 1)
+        i = j
+        j += 1
+    return ans
+
+
+def main() -> None:
+    n = int(sys.stdin.readline().strip())
+    arr = list(map(int, sys.stdin.readline().strip().split()))
+    print(numRabbits(arr))
+
+
+if __name__ == '__main__':
+    main()

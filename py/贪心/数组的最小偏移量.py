@@ -11,19 +11,35 @@
 # 返回数组在执行某些操作之后可以拥有的最小偏移量
 # 测试链接 : https://leetcode.cn/problems/minimize-deviation-in-array/
 
-from sortedcontainers import SortedList
-class Solution:
-    def minimumDeviation(self, nums: list[int]) -> int:
-        set_ = SortedList()
-        for num in nums:
-            if num & 1:
-                set_.add(num * 2)
-            else:
-                set_.add(num)
-        ans = set_[-1] - set_[0]
-        while ans > 0 and set_[-1] % 2 == 0:
-            x = set_.pop()
-            set_.add(int(x // 2))  # 注意是int
-            ans = min(ans, set_[-1] - set_[0])
-        return ans
+from typing import List
+import sys
+import bisect
+
+def minimumDeviation(nums: List[int]):
+    processed = []
+    for num in nums:
+        if num % 2 == 1:
+            processed.append(num * 2)
+        else:
+            processed.append(num)
+    processed.sort()
+
+    ans = processed[-1] - processed[0]
+
+    while ans > 0 and processed[-1] % 2 == 0:
+        max_val = processed.pop()
+        bisect.insort(processed, max_val//2)
+        ans = min(ans, processed[-1] - processed[0])
+
+    return ans 
+
+
+def main() -> None:
+    n = int(sys.stdin.readline().strip())
+    nums = list(map(int, sys.stdin.readline().strip().split()))
+    print(minimumDeviation(nums))
+
+
+if __name__ == '__main__':
+    main()
 

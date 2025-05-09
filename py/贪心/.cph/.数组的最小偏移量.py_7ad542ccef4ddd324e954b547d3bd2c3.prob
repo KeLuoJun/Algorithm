@@ -1,0 +1,1 @@
+{"name":"Local: 数组的最小偏移量","url":"d:\\Code\\Algorithm\\py\\贪心\\数组的最小偏移量.py","tests":[{"id":1746798106901,"input":"4\n1 2 3 4","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\贪心\\数组的最小偏移量.py","group":"local","local":true}

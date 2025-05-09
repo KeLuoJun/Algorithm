@@ -1,0 +1,1 @@
+{"name":"Local: 使数组相似的最少操作次数","url":"d:\\Code\\Algorithm\\py\\贪心\\使数组相似的最少操作次数.py","tests":[{"id":1746805499724,"input":"3\n8 12 6\n2 14 10","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\贪心\\使数组相似的最少操作次数.py","group":"local","local":true}

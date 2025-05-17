@@ -1,0 +1,1 @@
+{"name":"Local: 尼姆博弈(Nim Game)","url":"d:\\Code\\Algorithm\\py\\博弈\\尼姆博弈(Nim Game).py","tests":[{"id":1747381446007,"input":"2\n2\n1 1\n2\n1 0","output":"No\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\博弈\\尼姆博弈(Nim Game).py","group":"local","local":true}

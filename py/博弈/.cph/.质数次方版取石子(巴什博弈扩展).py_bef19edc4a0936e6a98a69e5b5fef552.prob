@@ -1,0 +1,1 @@
+{"name":"Local: 质数次方版取石子(巴什博弈扩展)","url":"d:\\Code\\Algorithm\\py\\博弈\\质数次方版取石子(巴什博弈扩展).py","tests":[{"id":1747381076946,"input":"3\n4\n9\n14","output":"October wins!\nOctober wins!\nOctober wins!"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\博弈\\质数次方版取石子(巴什博弈扩展).py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 范围增加、单点查询模版","url":"d:\\Code\\Algorithm\\py\\树状数组\\范围增加、单点查询模版.py","tests":[{"id":1748593789451,"input":"5 5\n1 5 4 2 3\n1 2 4 2\n2 3\n1 1 5 -1\n1 3 5 7\n2 4","output":"6\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\树状数组\\范围增加、单点查询模版.py","group":"local","local":true}

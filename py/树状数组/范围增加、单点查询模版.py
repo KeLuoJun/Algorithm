@@ -16,7 +16,7 @@ def add(tree, n, i, v):
         tree[i] += v
         i += lowbit(i)
 
-def sum_(tree, i):
+def query(tree, i):
     """ 返回1~i范围累加和 """
     ans = 0
     while i > 0:
@@ -59,7 +59,7 @@ def main():
         elif op == 2:
             index = data[ptr]
             ptr += 1
-            print(sum_(tree, index))
+            print(query(tree, index))
 
 
 if __name__ == '__main__':

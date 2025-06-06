@@ -16,7 +16,7 @@ def add(tree, n, i, v):
         tree[i] += v
         i += lowbit(i)
 
-def sum(tree, i):
+def query(tree, i):
     """ 返回1~i范围累加和 """
     ans = 0
     while i > 0:
@@ -24,8 +24,8 @@ def sum(tree, i):
         i -= lowbit(i)
     return ans
 
-def range_sum(tree, l, r):
-    return sum(tree, r) - sum(tree, l - 1)
+def range_query(tree, l, r):
+    return query(tree, r) - query(tree, l - 1)
 
 def main() -> None:
     n, m = map(int, sys.stdin.readline().strip().split())
@@ -41,7 +41,7 @@ def main() -> None:
         if arr[0] == 1:
             add(tree, n, arr[1], arr[2])
         elif arr[0] == 2:
-            print(range_sum(tree, arr[1], arr[2]))
+            print(range_query(tree, arr[1], arr[2]))
 
 
 if __name__ == '__main__':

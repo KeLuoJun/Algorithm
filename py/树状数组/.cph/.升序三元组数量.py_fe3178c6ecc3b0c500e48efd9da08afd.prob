@@ -1,0 +1,1 @@
+{"name":"Local: 升序三元组数量","url":"d:\\Code\\Algorithm\\py\\树状数组\\升序三元组数量.py","tests":[{"id":1749180278356,"input":"5\n1 2 2 3 4","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\树状数组\\升序三元组数量.py","group":"local","local":true}

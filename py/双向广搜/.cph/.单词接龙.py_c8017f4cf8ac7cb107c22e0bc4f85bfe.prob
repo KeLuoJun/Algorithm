@@ -1,0 +1,1 @@
+{"name":"Local: 单词接龙","url":"d:\\Code\\Algorithm\\py\\双向广搜\\单词接龙.py","tests":[{"id":1749388466639,"input":"hit cog\nhot dot dog lot log cog","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\双向广搜\\单词接龙.py","group":"local","local":true}

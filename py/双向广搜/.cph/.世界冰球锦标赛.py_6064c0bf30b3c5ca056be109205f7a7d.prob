@@ -1,0 +1,1 @@
+{"name":"Local: 世界冰球锦标赛","url":"d:\\Code\\Algorithm\\py\\双向广搜\\世界冰球锦标赛.py","tests":[{"id":1749472041473,"input":"5 1000\n100 1500 500 500 1000","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\双向广搜\\世界冰球锦标赛.py","group":"local","local":true}

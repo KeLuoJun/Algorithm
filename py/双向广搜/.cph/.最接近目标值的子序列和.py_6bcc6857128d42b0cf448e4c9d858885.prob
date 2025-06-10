@@ -1,0 +1,1 @@
+{"name":"Local: 最接近目标值的子序列和","url":"d:\\Code\\Algorithm\\py\\双向广搜\\最接近目标值的子序列和.py","tests":[{"id":1749476550402,"input":"4 6\n5 -7 3 5","output":"0"},{"id":1749476602856,"input":"4 -5\n7 -9 15 -2","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\双向广搜\\最接近目标值的子序列和.py","group":"local","local":true}

@@ -28,6 +28,7 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]):
                 for c in 'abcdefghijklmnopqrstuvwxyz':
                     if c == word[i]:
                         continue
+                    # 不能在原来的字符串上修改
                     new_word = word[:i] + c + word[i + 1:]
                     if new_word in bigLevel:
                         return length

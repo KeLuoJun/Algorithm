@@ -25,7 +25,7 @@ def bfs_01(grid):
     dq = deque()
 
     dq.appendleft([0, 0])
-    distance[0][0] = 0
+    distance[0][0] = 0  # distance表有替代visited表的功能
     while dq:
         x, y = dq.popleft()
         if x == m - 1 and y == n - 1:

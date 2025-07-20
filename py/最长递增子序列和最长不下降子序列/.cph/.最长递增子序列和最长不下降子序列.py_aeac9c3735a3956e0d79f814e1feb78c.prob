@@ -1,0 +1,1 @@
+{"name":"Local: 最长递增子序列和最长不下降子序列","url":"d:\\Code\\Algorithm\\py\\最长递增子序列和最长不下降子序列\\最长递增子序列和最长不下降子序列.py","tests":[{"id":1749560294483,"input":"6\n0 1 0 3 2 3","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\最长递增子序列和最长不下降子序列\\最长递增子序列和最长不下降子序列.py","group":"local","local":true}

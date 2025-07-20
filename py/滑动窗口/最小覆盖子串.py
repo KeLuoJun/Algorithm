@@ -3,6 +3,8 @@
 # 如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
 # 测试链接 : https://leetcode.cn/problems/minimum-window-substring/
 
+
+# 活动窗口 + 欠债表
 import sys
 def main() -> None:
     s = sys.stdin.readline().strip()

@@ -1,0 +1,1 @@
+{"name":"Local: 成为回文串的最少插入次数","url":"d:\\Code\\Algorithm\\py\\DP\\状压dp\\成为回文串的最少插入次数.py","tests":[{"id":1753032695603,"input":"zzazz","output":"0"},{"id":1753032726949,"input":"mbadm","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\状压dp\\成为回文串的最少插入次数.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 赢家预测","url":"d:\\Code\\Algorithm\\py\\DP\\区间dp\\赢家预测.py","tests":[{"id":1753287896317,"input":"1 5 2","output":"false"},{"id":1753289421883,"input":"1 5 233 7","output":"true"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\区间dp\\赢家预测.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 多边形三角剖分的最低得分","url":"d:\\Code\\Algorithm\\py\\DP\\区间dp\\多边形三角剖分的最低得分.py","tests":[{"id":1753290054514,"input":"1 2 3","output":"6"},{"id":1753290061780,"input":"3 7 4 5 ","output":"144"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\区间dp\\多边形三角剖分的最低得分.py","group":"local","local":true}

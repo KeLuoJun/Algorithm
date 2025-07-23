@@ -1,0 +1,1 @@
+{"name":"Local: 我能赢吗","url":"d:\\Code\\Algorithm\\py\\DP\\状压dp\\我能赢吗.py","tests":[{"id":1753119181923,"input":"10 11","output":"false"},{"id":1753119327152,"input":"10 0","output":"true"},{"id":1753119335824,"input":"10 1","output":"true"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\DP\\状压dp\\我能赢吗.py","group":"local","local":true}

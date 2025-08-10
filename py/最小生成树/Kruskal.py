@@ -1,7 +1,7 @@
 # Kruskal算法模版（洛谷）
 # 静态空间实现
 # 测试链接 : https://www.luogu.com.cn/problem/P3366
-# 并查集 + 对边的权值排序 
+# 并查集 + 对边的权值排序
 
 class Kruskal:
     def __init__(self, n, m, edges):
@@ -24,6 +24,7 @@ class Kruskal:
             return result
         else:
             return "此图不连通！"
+
     def build(self) -> None:
         for i in range(1, self.n + 1):
             self._father[i] = i
@@ -42,6 +43,7 @@ class Kruskal:
         else:
             return False
 
+
 def main():
     n, m = map(int, input("请输入图的信息\n[点数] [边数]\n").split())
     edges = [[0] * 3 for _ in range(m)]
@@ -50,6 +52,7 @@ def main():
         edges[i] = list(map(int, input().split()))
     k = Kruskal(n, m, edges)
     print(k.ans)
-    
+
+
 if __name__ == '__main__':
     main()

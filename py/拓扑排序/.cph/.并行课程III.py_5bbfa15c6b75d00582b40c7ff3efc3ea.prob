@@ -1,0 +1,1 @@
+{"name":"Local: 并行课程III","url":"d:\\Code\\Algorithm\\py\\拓扑排序\\并行课程III.py","tests":[{"id":1753868789286,"input":"3 2\n1 3\n2 3\n3 2 5","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Code\\Algorithm\\py\\拓扑排序\\并行课程III.py","group":"local","local":true}

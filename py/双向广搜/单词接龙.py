@@ -10,7 +10,9 @@
 # 测试链接 : https://leetcode.cn/problems/word-ladder/
 
 import sys
-from typing import Set, List
+from typing import List
+
+
 def ladderLength(beginWord: str, endWord: str, wordList: List[str]):
     if endWord not in wordList:
         return 0
@@ -33,7 +35,7 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]):
                     if new_word in bigLevel:
                         return length
                     if new_word in wordList:
-                        wordList.remove(new_word)
+                        wordList.remove(new_word)  # 防止重复
                         nextLevel.add(new_word)
         if len(nextLevel) < len(bigLevel):
             smallLevel = nextLevel
@@ -43,11 +45,11 @@ def ladderLength(beginWord: str, endWord: str, wordList: List[str]):
         length += 1
     return 0
 
+
 def main() -> None:
     beginWord, endWord = sys.stdin.readline().split()
     wordList = list(map(str, sys.stdin.readline().split()))
     print(ladderLength(beginWord, endWord, wordList))
-
 
 
 if __name__ == '__main__':

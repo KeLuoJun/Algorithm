@@ -27,7 +27,7 @@ def distanceLimitedPathsExist(n, edges, queries):
     def union(x, y):
         global father
         father[find(x)] = father[find(y)]
-    def isSameSet(x, y):
+    def is_same_set(x, y):
         return find(x) == find(y)
     m, k = len(edges), len(queries)
     questions = [[0] * 4 for _ in range(k)]
@@ -45,7 +45,7 @@ def distanceLimitedPathsExist(n, edges, queries):
         while j < m and edges[j][2] < questions[i][2]:
             union(edges[j][0], edges[j][1])
             j += 1
-        ans[questions[i][3]] = isSameSet(questions[i][0], questions[i][1])
+        ans[questions[i][3]] = is_same_set(questions[i][0], questions[i][1])
     return ans
 
 
